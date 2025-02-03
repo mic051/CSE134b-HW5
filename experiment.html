@@ -13,8 +13,9 @@
         <h1>Experiment</h1>
         <hgroup>
             <h1>h1 text</h1>
+            <p>p1 text</p>
             <h2>h2 text</h2>
-            <p>p text</p>
+            <p>p2 text</p>
         </hgroup>
         <pre>pre          
 
@@ -28,12 +29,13 @@
                 <source src="laugh.wav" type="audio/wav">
             </audio>
             <br>
-            <video width="200vw" height="200vw" controls>
+            <video width="200" height="200" controls>
                 <source src="ratvideo.mp4" type="video/mp4">
+            </video>
         </span>
         <br>
 
-        <canvas id="canvas1" width="200vw" height="200vw" style="border: 1px solid black;"></canvas>
+        <canvas id="canvas1" width="200" height="200" style="border: 1px solid black;"></canvas>
         <script>
             var c = document.getElementById("canvas1");
             var ctx = c.getContext("2d");
@@ -80,10 +82,10 @@
         </template>
 
         <table>
-            <colgroup>
-                <col span="1">
-            </colgroup>
             <caption>Test Table</caption>
+            <colgroup>
+                <col span="2">
+            </colgroup>
             <tr>
                 <th>Header 1</th>
                 <th>Header 2</th>
