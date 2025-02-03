@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+</html>
+<body>
+    <main>
+        <a href="index.html">Home</a>
+        <h1>Experiment</h1>
+        <pre>pre          
+
+                    test
+        </pre>
+        <iframe src="https://www.wikipedia.org/" title="Wikipedia"></iframe>
+        <br>
+
+        <span>
+            <audio controls>
+                <source src="laugh.wav" type="audio/wav">
+            </audio>
+            <br>
+            <video width="200vw" height="200vw" controls>
+                <source src="ratvideo.mp4" type="video/mp4">
+        </span>
+        <br>
+
+        <canvas id="canvas1" width="200vw" height="200vw" style="border: 1px solid black;"></canvas>
+        <script>
+            var c = document.getElementById("canvas1");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(100, 100, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+        <br>
+
+        <svg width="100px" height="100px">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="black" />
+        </svg>
+        <br>
+
+        <input list="numbers" name="numberInput">
+        <datalist id="numbers">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+        </datalist>
+        <br>
+
+        <template>
+            <p>Temp template</p>        <table>
+                <colgroup name="firstCol">
+                    <col span="1" style="border: 1px solid red;">
+                </colgroup>
+                <caption>Test Table</caption>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+    
+                <tr>
+                    <td>Val 1</td>
+                    <td>Val 2</td>
+                </tr>
+    
+                <tr>
+                    <td>Val 3</td>
+                    <td>Val 4</td>
+                </tr>
+            </table>
+        </template>
+
+        <table>
+            <colgroup>
+                <col span="1" style="background-color: red;">
+            </colgroup>
+            <caption>Test Table</caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+
+            <tr>
+                <td>Val 1</td>
+                <td>Val 2</td>
+            </tr>
+
+            <tr>
+                <td>Val 3</td>
+                <td>Val 4</td>
+            </tr>
+        </table>
+
+        <blockquote cite="https://www.goodreads.com/quotes">
+            <p>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</p>
+            <p>-Albert Einstein</p>
+        </blockquote>
+        <br>
+
+        <ins>
+            Inserted Text
+        </ins>
+
+        <br>
+
+        <del>
+            Deleted Text
+        </del>
+        <br>
+
+        <dialog open>
+            Dialog Box
+        </dialog>
+        <br>
+
+        <custom-print></custom-print>
+    </main>
+</body>

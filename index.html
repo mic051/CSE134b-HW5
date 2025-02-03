@@ -1,0 +1,129 @@
+<!-- TOOD:  ASIDE
+            DIV
+  -->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link ref="stylesheet" href="styles.css">
+        <style>
+            course-list {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <noscript>
+        <p>Javascript is currently disabled</p>
+    </noscript>
+    <header>
+        <nav>
+            <a href="experiment.html">Experiment</a>
+            <br>
+            <a href="resume.html">Resume</a>
+        </nav>
+        <hgroup>
+            <h1>Hi, I'm Michael Chen</h1>
+            <address>
+                mic051@ucsd.edu
+            </address>
+            <img src="portrait.jpg" alt="Portrait" width="172vw" height="217vw">
+            <search>
+                <form>
+                    <label for="search">Search</label>
+                    <input type="text" id="search" name="search">
+                    <input type="submit" value="Submit">
+                </form>
+            </search>
+        </hgroup>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <h2>Education</h2>
+            <p>I'm a 2nd year transfer computer science student at <abbr><b>UCSD</b></abbr> (University of California, San Diego), though I transferred from <i>Diablo Valley College</i>.</p>
+            <details>
+                <summary>Current/Completed Courses (UCSD)</summary>
+                <course-list>
+                    <ol>
+                        <li>CSE 134B: Web Client Languages</li>
+                        <li>COGS 120: Interaction Design</li>
+                        <li>CSE 160: Intro to Parallel Computing</li>
+                        <li>CSE 110: Software Engineering</li>
+                        <li>CSE 151A. Machine Learning: Learning Algorithms</li>
+                        <li>CSE 150A. Introduction to Artificial Intelligence: Probabilistic Reasoning and Decision-Making</li>
+                        <li>CSE 120: Operating Systems Principles</li>
+                        <li>CSE 132A: Database System Principles</li>
+                        <li>CSE 101: Design and Analysis of Algorithms</li>
+                    </ol>
+                </course-list>
+            </details>
+            <br>
+            
+            <img src="ucsd.jpg" alt="UCSD" width="350vw" height="200vw">
+            <img src="dvc.avif" alt="DVC " width="350vw" height="200vw">
+            <h2>Experiences</h2>
+            <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks (including <strong>reducing 1 task from 600 hours a year to 1 hour</strong>) in <code>C# and VBA</code>.</p>
+            <dfn>VBA (Visual Basic for Applications) is a flavor of Visual Basic that works with Microsoft appications. I specifically was working with Microsoft Access, a database program.</dfn>
+        </section>
+        <div>
+            <h3>Fun Facts</h3>
+            <ul>
+                <li>I am from San Ramon, California!</li>
+                <figure>
+                    <picture>
+                        <source srcset="sanramon.avif"  alt="San Ramon">
+                        <img src="sanramon2.jpg" alt="Fallback San Ramon" width="200vw" height="200vw">
+                    </picture>
+                    <figcaption>San Ramon, CA</figcaption>
+                </figure>
+
+                <li>I used to play electric and upright bass for my high school's advanced jazz ensemble!</li>
+
+                <dl>
+                    <dt>Upright bass</dt>
+                    <dd>A big, acousistic, upright bass. Doesn't require electricity. Can be plucked or played with a bow. Think of a big cello.</dd>
+                </dl>
+
+                <li>My favorite shortcut is <kbd>Ctrl + X</kbd>, as I'm always refactoring whatever I write.</li>
+            </ul>
+        </div>
+        <form>
+            <h3>Contact Me</h3>
+            <fieldset>
+                <legend>Info</legend>
+                <label for="reason">Reason for Contact</label>
+                <select name="reason" id="reason">
+                    <optgroup label="Reason">
+                        <option value="question">Question</option>
+                        <option value="comment">Comment</option>
+                        <option value="concern">Concern</option>
+                        <option value="other">Other</option>
+                    </optgroup>
+                </select>
+
+                <br>
+                <label for="nameField">Name</label>
+                <br>
+                <input type="text" id="nameField" name="name">
+                <br>
+
+                <label for="emailField">Email</label>
+                <br>
+                <input type="text" id="emailField" name="email">
+                <br>
+                
+                <label for="Message">Message</label>
+                <br>
+                <input type="text" id="messageField" name="message">
+                <br>
+
+                <input type="submit" value="Submit">
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>Michael Chen CSE134B WI25 HW 2</footer>
+</body>
