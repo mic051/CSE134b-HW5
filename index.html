@@ -1,9 +1,7 @@
-<!-- TOOD:  ASIDE
-            DIV
-  -->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link ref="stylesheet" href="styles.css">
@@ -63,10 +61,14 @@
             <br>
             
             <img src="ucsd.jpg" alt="UCSD" width="350vw" height="200vw">
+            <figcaption>UCSD</figcaption>
             <img src="dvc.avif" alt="DVC " width="350vw" height="200vw">
+            <figcaption>Diablo Valley College</figcaption>
             <h2>Experiences</h2>
             <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks (including <strong>reducing 1 task from 600 hours a year to 1 hour</strong>) in <code>C# and VBA</code>.</p>
-            <dfn>VBA (Visual Basic for Applications) is a flavor of Visual Basic that works with Microsoft appications. I specifically was working with Microsoft Access, a database program.</dfn>
+            <aside>
+                <dfn>VBA (Visual Basic for Applications) is a flavor of Visual Basic that works with Microsoft appications. I specifically was working with Microsoft Access, a database program.</dfn>
+            </aside>
         </section>
         <div>
             <h3>Fun Facts</h3>
@@ -87,7 +89,7 @@
                     <dd>A big, acousistic, upright bass. Doesn't require electricity. Can be plucked or played with a bow. Think of a big cello.</dd>
                 </dl>
 
-                <li>My favorite shortcut is <kbd>Ctrl + X</kbd>, as I'm always refactoring whatever I write.</li>
+                <li>My favorite shortcut is <kbd>Ctrl + X</kbd>, as I'm always refactoring my work.</li>
             </ul>
         </div>
         <form>
@@ -115,9 +117,9 @@
                 <input type="text" id="emailField" name="email">
                 <br>
                 
-                <label for="Message">Message</label>
+                <label for="message">Message</label>
                 <br>
-                <input type="text" id="messageField" name="message">
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
                 <br>
 
                 <input type="submit" value="Submit">
