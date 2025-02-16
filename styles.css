@@ -1,0 +1,28 @@
+:root {
+    --navGap: 1em;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: grid;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: dark blue;
+}
+
+* {
+    font-family: Cambria;
+}

@@ -10,95 +10,95 @@
             font-family: Arial, sans-serif;
         }
     </style>
-    <search>
-        <form>
-            <label for="search">Search</label>
-            <input type="text" id="search" name="search">
-            <input type="submit" value="Submit">
-        </form>
-    </search>
 </head>
 
 <body>
     <noscript>
         <p>Javascript is currently disabled</p>
     </noscript>
-    <header>
+    <header class="topBar">
+        <header>
+            <h1>Hi, I'm Michael Chen</h1>
+            <address>
+                mic051@ucsd.edu
+            </address>
+        </header>
         <nav>
-            <a href="experiment.html">Experiment</a>
-            <br>
-            <a href="resume.html">Resume</a>
+            <search>
+                <form>
+                    <label for="search">Search</label>
+                    <input type="text" id="search" name="search">
+                    <input type="submit" value="Submit">
+                </form>
+            </search>
+            <nav class="links">
+                <a href="experiment.html">Experiment</a>
+                <a href="resume.html">Resume</a>
+            </div>
         </nav>
-        <h1>Hi, I'm Michael Chen</h1>
-        <address>
-            mic051@ucsd.edu
-        </address>
-        <img src="portrait.jpg" alt="Portrait" width="172" height="217">
     </header>
+    <!-- <img src="assets/portrait.jpg" alt="Portrait" width="172" height="217"> -->
     <main>
         <hr>
         <section>
             <h2>Education</h2>
-            <p>I'm a 2nd year transfer computer science student at <abbr><b>UCSD</b></abbr> (University of California, San Diego), though I transferred from <i>Diablo Valley College</i>.</p>
-            <details>
-                <summary>Current/Completed Courses (UCSD)</summary>
-                <course-list>
-                    <ol>
-                        <li>CSE 134B: Web Client Languages</li>
-                        <li>COGS 120: Interaction Design</li>
-                        <li>CSE 160: Intro to Parallel Computing</li>
-                        <li>CSE 110: Software Engineering</li>
-                        <li>CSE 151A. Machine Learning: Learning Algorithms</li>
-                        <li>CSE 150A. Introduction to Artificial Intelligence: Probabilistic Reasoning and Decision-Making</li>
-                        <li>CSE 120: Operating Systems Principles</li>
-                        <li>CSE 132A: Database System Principles</li>
-                        <li>CSE 101: Design and Analysis of Algorithms</li>
-                    </ol>
-                </course-list>
-            </details>
+            <p>I'm a 4th year transfer computer science student at <abbr><b>UCSD</b></abbr> (University of California, San Diego).
+                I've taken classes in web development, artificial intelligence, machine learning, software engineering, databases, and more.
             <br>
             
-            <img src="ucsd.jpg" alt="UCSD" width="350" height="200">
-            <p>UCSD</p> 
-            <img src="dvc.avif" alt="DVC " width="350" height="200">
-            <p>Diablo Valley College</p>
-            <h2>Experiences</h2>
-            <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks (including <strong>reducing 1 task from 600 hours a year to 1 hour</strong>) in <code>C# and VBA</code>.</p>
             <aside>
-                <dfn>VBA (Visual Basic for Applications) is a flavor of Visual Basic that works with Microsoft appications. I specifically was working with Microsoft Access, a database program.</dfn>
+                <figure>
+                    <img src="assets/ucsd.avif" alt="UCSD" width="350" height="200">
+                    <figcaption>UCSD</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/dvc.avif" alt="DVC " width="350" height="200">
+                    <figcaption>DVC</figcaption>
+                </figure>
             </aside>
+            <h2>Experiences</h2>
+            <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks in <code>C#</code> and <code>VBA</code>.</p>
         </section>
-        <div>
+        <article>
             <h3>Fun Facts</h3>
             <ul>
                 <li>I am from San Ramon, California!
                     <figure>
                         <picture>
-                            <source srcset="sanramon.avif">
-                            <img src="sanramon2.jpg" alt="Fallback San Ramon" width="200" height="200">
+                            <source srcset="assets/sanramon.avif">
+                            <img src="assets/sanramon2.jpg" alt="Fallback San Ramon" width="200" height="200">
                         </picture>
                         <figcaption>San Ramon, CA</figcaption>
                     </figure>
                 </li>
 
-                <li>
-                    I used to play electric and upright bass for my high school's advanced jazz ensemble!
-                    <dl>
-                        <dt>Upright bass</dt>
-                        <dd>A big, acousistic, upright bass. Doesn't require electricity. Can be plucked or played with a bow. Think of a big cello.</dd>
-                    </dl>
-                </li>
-
-
-
-                <li>My favorite shortcut is <kbd>Ctrl + X</kbd>, as I'm always refactoring my work.</li>
+                <li>I used to play electric and upright bass for my high school's advanced jazz ensemble!</li>
+                <li>Before transferring to UCSD, I've done 2 years at <abbr>DVC</abbr> (Diablo Valley College)</li>
+                <li>My favorite theme is Dracula and I try to use it as much as I can.</li>
+                <li>One of my hobbies is custom keyboards! I personally own a Mode Sonnet and Gingko65.</li>
             </ul>
-        </div>
+        </article>
+        <details>
+            <summary>Current/Completed Courses (UCSD)</summary>
+            <course-list>
+                <ol>
+                    <li>CSE 134B: Web Client Languages</li>
+                    <li>COGS 120: Interaction Design</li>
+                    <li>CSE 160: Intro to Parallel Computing</li>
+                    <li>CSE 110: Software Engineering</li>
+                    <li>CSE 151A. Machine Learning: Learning Algorithms</li>
+                    <li>CSE 150A. Introduction to Artificial Intelligence: Probabilistic Reasoning and Decision-Making</li>
+                    <li>CSE 120: Operating Systems Principles</li>
+                    <li>CSE 132A: Database System Principles</li>
+                    <li>CSE 101: Design and Analysis of Algorithms</li>
+                </ol>
+            </course-list>
+        </details>
         <form>
-            <h3>Contact Me</h3>
+            <h3>Contact Me!</h3>
             <fieldset>
                 <legend>Info</legend>
-                <label for="reason">Reason for Contact</label>
+                <label for="reason">Reason</label>
                 <select name="reason" id="reason">
                     <optgroup label="Reason">
                         <option value="question">Question</option>
@@ -129,6 +129,6 @@
             </fieldset>
         </form>
     </main>
-    <footer>Michael Chen CSE134B WI25 HW 2</footer>
+    <footer>Michael Chen CSE134B WI25 HW 3</footer>
 </body>
 </html>
