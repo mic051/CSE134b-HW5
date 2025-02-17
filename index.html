@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
     <style>
         course-list {
             font-family: Arial, sans-serif;
@@ -45,36 +48,19 @@
             <p>I'm a 4th year transfer computer science student at <abbr><b>UCSD</b></abbr> (University of California, San Diego).
                 I've taken classes in web development, artificial intelligence, machine learning, software engineering, databases, and more.
             <br>
-            
-            <aside>
-                <figure>
-                    <img src="assets/ucsd.avif" alt="UCSD" width="350" height="200">
-                    <figcaption>UCSD</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/dvc.avif" alt="DVC " width="350" height="200">
-                    <figcaption>DVC</figcaption>
-                </figure>
-            </aside>
-            <h2>Experiences</h2>
+            <h2>Experience</h2>
             <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks in <code>C#</code> and <code>VBA</code>.</p>
         </section>
         <article>
             <h3>Fun Facts</h3>
             <ul>
                 <li>I am from San Ramon, California!
-                    <figure>
-                        <picture>
-                            <source srcset="assets/sanramon.avif">
-                            <img src="assets/sanramon2.jpg" alt="Fallback San Ramon" width="200" height="200">
-                        </picture>
-                        <figcaption>San Ramon, CA</figcaption>
-                    </figure>
+
                 </li>
 
-                <li>I used to play electric and upright bass for my high school's advanced jazz ensemble!</li>
+                <li>I used to play electric and upright bass for my high school's advanced jazz ensemble.</li>
                 <li>Before transferring to UCSD, I've done 2 years at <abbr>DVC</abbr> (Diablo Valley College)</li>
-                <li>My favorite theme is Dracula and I try to use it as much as I can.</li>
+                <li>Dracula is my favorite theme (and the current one for the website).</li>
                 <li>One of my hobbies is custom keyboards! I personally own a Mode Sonnet and Gingko65.</li>
             </ul>
         </article>
@@ -94,6 +80,32 @@
                 </ol>
             </course-list>
         </details>
+        <aside>
+            <figure>
+                <picture>
+                    <!-- https://www.eyrc.com/work/uc-san-diego-ridge-walk-north-living-and-learning-neighborhood -->
+                    <source srcset="assets/ucsd-min.jpg" media="(max-width: 100%)">
+                    <img src="assets/ucsd-min.jpg" alt="UCSD" title="UCSD" width="350" height="200">
+                </picture>
+                <figcaption>UCSD</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <!-- https://www.dvc.edu/admissions/visit-us -->
+                    <source srcset="assets/dvc-min.jpg" media="(max-width: 100%)">
+                    <img src="assets/dvc-min.jpg" alt="DVC" title="DVC" width="350" height="200">
+                </picture>
+                <figcaption>DVC</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <!-- https://www.homes.com/local-guide/san-ramon-ca/san-ramon-valley-neighborhood/-->
+                    <source srcset="assets/sanramon-min.jpg" media="(max-width: 100%)">
+                    <img src="assets/sanramon-min.jpg" alt="San Ramon" title="San Ramon" width="350" height="200">
+                </picture>
+                <figcaption>San Ramon, CA</figcaption>
+            </figure>
+        </aside>
         <form>
             <h3>Contact Me!</h3>
             <fieldset>
