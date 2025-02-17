@@ -1,0 +1,53 @@
+:root {
+    --navGap: 1em;
+    --pink: color(display-p3 1 0.474 0.776);
+    --backgroundColor: #282A36;
+    --white: #F8F8F2;
+    --yellow: #F1FA8C;
+    --green: #50FA7B;
+    --blue: #8BE9FD;
+    --orange: #FFB86C;
+    --purple: #BD93F9;
+    --h1Size: 400%;
+    --addrSize: 200%;
+    --labelSizes: 150%;
+    --subheadingSize: 300%;
+    --textSize: 150%;
+    --smallTextSize: 150%;
+    --extraSmallTextSize: 125%;
+    --padding: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: var(--h1Size);
+    color: var(--pink, #FF79C6);
+    text-align: center;
+    flex-grow: 1;
+}
+
+a {
+    margin: 0;
+    padding-right: var(--padding);
+    font-size: var(--textSize);
+    text-decoration: none;
+    color: var(--orange);
+    text-align: center;
+}
+
+body {
+    background-color: #282A36;
+}
+
+iframe {
+    width: 90vw; /* Makes the PDF span most of the viewport width */
+    max-width: 900px; /* Prevents it from getting too large */
+    height: 85dvh; /* Adjusts height dynamically */
+    border: none;
+}

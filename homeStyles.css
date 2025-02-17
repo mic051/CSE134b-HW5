@@ -81,17 +81,14 @@
         flex-wrap: wrap;
     }
     
-    .links a {
-        flex: 1 1 auto;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    
     a, a:visited {
         font-size: var(--textSize);
         text-decoration: none;
         color: var(--orange);
         transition:text-shadow 0.5s;
+        flex: 1 1 auto;
+        text-align: center;
+        box-sizing: border-box;
     }
     
     a:hover {
