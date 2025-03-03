@@ -50,12 +50,12 @@
 
 input, button {
     font-size: var(--smallTextSize);
+    background-color: var(--backgroundColor);
 }
 
 body {
     background-color: var(--backgroundColor);
 }
-
 h1 {
     color: var(--pink);
     font-size: var(--h1Size);
@@ -64,7 +64,6 @@ h1 {
 address {
     color: var(--blue);
     font-size: var(--addrSize);
-    
 }
 
 label {
@@ -350,6 +349,10 @@ p, ul, li, button, footer, figcaption, textarea, input[type="text"], input[type=
 
 summary, legend, label, select, button, input[type="submit"], output {
     color: var(--blue);
+}
+
+textarea {
+    background-color: var(--backgroundColor);
 }
 
 @keyframes flash {
