@@ -6,14 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resumeStyles.css">
+        <script src="resume.js" defer></script>
+        
     </head>
     <body>
         <header>
             <h1>Resume</h1>
             <a href="index.html">Home</a>
+            <button id="themeToggle">
+                <img id="themeIcon" src="assets/sun-min.png" alt="Switch modes">
+            </button>
         </header>
         
         <main>
+            <noscript>
+                <p>Javascript is currently disabled</p>
+                <style>
+                    #themeToggle {
+                        display: none;
+                    }
+                </style>
+            </noscript>
             <embed src="assets/resume.pdf" title="Resume PDF" width="40%" height="1000px"></iframe>
         </main>
     </body>

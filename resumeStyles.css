@@ -18,11 +18,36 @@
     --padding: 1.5em;
 }
 
+[data-theme="light"] {
+    --backgroundColor: #fdf6e3;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#themeToggle {
+    width: 100px;
+    height: 100px;
+    margin: auto
+}
+
+#themeIcon {
+    width: 70px;
+    height: 70px;
+}
+
+p {
+    font-size: var(--textSize);
+    color: var(--pink);
+}
+
+
+body, #themeToggle {
+    background-color: var(--backgroundColor);
 }
 
 h1 {
@@ -49,8 +74,4 @@ main {
 embed {
     display: flex;
     align-items: center;
-}
-
-* {
-    background-color: var(--backgroundColor);
 }

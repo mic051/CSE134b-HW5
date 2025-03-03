@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let commentInput = document.getElementById('comment');
     let error = document.getElementById('errorMsg');
     let info = document.getElementById('infoMsg');
-    let textColor = '#F1FA8C';
+    let textColor = '#8BE9FD';
     let form_errors = [];
     let themeToggle = document.getElementById('themeToggle');
     let themeIcon = document.getElementById('themeIcon');
-    let currentTheme = localStorage.getItem('data-theme');
+    let currentTheme = localStorage.getItem('data-theme') || 'dark';
 
     localStorage.setItem('data-theme', 'dark');
 
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     nameInput.addEventListener('change', (event) => {
-        if (!event.target.value.match(/^[a-zA-Z]*$/)) {
-            event.target.value = event.target.value.replace(/[^a-zA-Z]/g, '');
+        if (!event.target.value.match(/^[a-zA-Z\s]*$/)) {
+            event.target.value = event.target.value.replace(/[^a-zA-Z\s]/g, '');
             nameInput.classList.remove('flash-error');
             nameInput.classList.add('flash-error');
             error.textContent = 'Error: Please only enter letters in the name field.'
