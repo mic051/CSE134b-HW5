@@ -17,6 +17,7 @@
     --extraSmallTextSize: 125%;
     --padding: 1.5em;
     --formMaxWidth: 60%;
+    --projectCardBorder: 5px;
 }
 
 [data-theme="light"] {
@@ -151,7 +152,12 @@ h1, p, h2, h3, ul, details {
     text-align: center;
 }
 
-h2, h3 {
+h2 {
+    color: var(--green);
+    font-size: 35px;
+}
+
+h3 {
     color: var(--green);
     font-size: var(--subheadingSize);
 }
@@ -294,7 +300,7 @@ h1, p, h2, h3, ul, details {
     text-align: center;
 }
 
-h2, h3 {
+h3 {
     color: var(--green);
     font-size: var(--subheadingSize);
 }
@@ -373,3 +379,32 @@ textarea {
     transition: opacity 1s ease-in-out;
     opacity: 1;
 }
+
+cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    border: var(--projectCardBorder) var(--yellow) solid;
+    margin: auto;
+    text-align: center;
+    height: 750px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.projectCard * {
+    margin: 5px auto;
+}
+
+loadButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+

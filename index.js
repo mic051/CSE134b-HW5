@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let commentInput = document.getElementById('comment');
     let error = document.getElementById('errorMsg');
     let info = document.getElementById('infoMsg');
+    let localLoadBtn = document.getElementById('localLoad');
+    let remoteLoadBtn = document.getElementById('remoteLoad');
     let textColor = '#8BE9FD';
     let form_errors = [];
     let themeToggle = document.getElementById('themeToggle');
@@ -155,5 +157,29 @@ document.addEventListener('DOMContentLoaded', () => {
         else {
             themeIcon.src = "assets/moon.png";
         }
+    });
+
+    localLoadBtn.addEventListener("click", () => {
+        console.log('local load');
+        const cards = document.querySelector('cards');
+        const data = JSON.parse(localStorage.getItem('card-data'));
+
+        if (!data || data.length === 0) {
+            console.log('No cards data in local storage');
+            return;
+        }
+
+        cards.innerHTML = '';
+
+        data.forEach(card => {
+            const projectCard = document.createElement('project-card');
+            projectCard.setAttribute('title', card.title);
+            projectCard.setAttribute('image', card.image);
+            projectCard.setAttribute('alt', card.alt);
+            projectCard.setAttribute('desc', card.desc);
+            projectCard.setAttribute('link', card.link);
+            projectCard.setAttribute('linkText', card.linkText);
+            cards.appendChild(projectCard);
+        });
     });
 });

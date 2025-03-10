@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
+    <script src="projectCard.js" defer></script>
     <style>
         course-list {
             display: block;
@@ -54,15 +55,41 @@
     <main>
         <hr>
         <section>
-            <h2>Education</h2>
+            <h1>Education</h1>
             <p>I'm a 4th year transfer computer science student at <abbr><b>UCSD</b></abbr> (University of California, San Diego).
                 I've taken classes in web development, artificial intelligence, machine learning, software engineering, databases, and more.
             <br>
-            <h2>Experience</h2>
-            <p>I've done 2 internships at <em>Topcon Positioning Systems</em>, where I wrote multiple test libraries and automated internal tasks in <code>C#</code> and <code>VBA</code>.</p>
+            <h1>Experiences and Portfolio</h1>
+            <cards>
+                <!-- https://logotyp.us/logo/topcon/ -->
+                <project-card
+                title="2 Topcon Positioning Systems Internships"
+                image="assets/topcon.jpg"
+                alt="Topcon Positioning Systems Logo",
+                desc="Done 2 internships. One to develop firmware testing libraries and programs for device setup for manufacturing. Worked with third party vendors to design accessible programs. The second one was to automate an internal task, saving hundreds of hours a year"
+                link="https://www.topconpositioning.com/",
+                linkText="Topcon"
+                >
+                </project-card>
+
+                <!-- https://engineering.purdue.edu/ece264/17au/hw/HW13?alt=huffman -->
+                <project-card
+                title="Huffman Coder and Decoder"
+                image="assets/huffman.jpg"
+                alt="Huffman Tree",
+                desc="Wrote a command line program for CSE101 that performs Huffman coding and decoding on files. The program reads a text file, creates a huffman tree, and returns an encoded output that contains the tree within it. The file can then be decoded with the tree in the output."
+                link="https://en.wikipedia.org/wiki/Huffman_coding",
+                linkText="Huffman Coding (Wikipedia)"
+                >
+                </project-card>
+            </cards>
+            <loadButtons>
+                <button id="localLoad">Load Local</button>
+                <button id="remoteLoad">Load Remote</button>
+            </loadButtons>
         </section>
         <article>
-            <h3>Fun Facts</h3>
+            <h1>Fun Facts</h1>
             <ul>
                 <li>I am from San Ramon, California!
 
@@ -139,6 +166,6 @@
             <output id="infoMsg">Info: None</output>
         </form>
     </main>
-    <footer>Michael Chen CSE134B WI25 HW 4</footer>
+    <footer>Michael Chen CSE134B WI25 HW 5</footer>
 </body>
 </html>
