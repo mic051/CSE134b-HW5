@@ -184,23 +184,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     remoteLoadBtn.addEventListener("click", async () => {
         const cards = document.querySelector('cards');
-        const urls = [
-            'https://jsonbin.io/quick-store/67cefa108960c979a56eff17',
-            'https://jsonbin.io/quick-store/67cefa698960c979a56eff42'
-        ];
-
-        cards.innerHTML = '';
+        const url = 'https://my-json-server.typicode.com/mic051/CSE134b-HW5/cards';
 
         try {
-            for (const url of urls) {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error(`Failed to fetch from ${url}`);
-                }
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch from ${url}`);
+            }
 
-                const card = await response.json();
-                console.log(card);
-
+            cards.innerHTML = '';
+            const data = await response.json();
+            console.log(data);
+            
+            data.forEach(card => {
                 const projectCard = document.createElement('project-card');
                 projectCard.setAttribute('title', card.title);
                 projectCard.setAttribute('image', card.image);
@@ -209,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectCard.setAttribute('link', card.link);
                 projectCard.setAttribute('linkText', card.linkText);
                 cards.appendChild(projectCard);
-            }
+            });
         }
 
         catch (err) {
