@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.documentElement.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
-        themeIcon.src = "assets/sun-min.png";
+        themeIcon.src = "assets/sun.png";
     }
 
     else {
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem("data-theme", newTheme);
 
         if (newTheme === 'dark') {
-            themeIcon.src = "assets/sun-min.png";
+            themeIcon.src = "assets/sun.png";
         }
     
         else {
