@@ -16,6 +16,12 @@
     --smallTextSize: 150%;
     --extraSmallTextSize: 125%;
     --padding: 1.5em;
+    --formMaxWidth: 60%;
+    --projectCardBorder: 5px;
+    --gap: 15px;
+    --margin: 10px;
+    --cardHeight: 750px;
+    --cardMaxWidth: 400px;
 }
 
 [data-theme="light"] {
@@ -40,6 +46,11 @@ header {
     height: 70px;
 }
 
+input, button {
+    font-size: var(--smallTextSize);
+    background-color: var(--backgroundColor);
+}
+
 p {
     font-size: var(--textSize);
     color: var(--pink);
@@ -54,6 +65,15 @@ h1 {
     font-size: var(--h1Size);
     color: var(--pink, #FF79C6);
     flex-grow: 1;
+}
+
+h1, p, h2, h3, ul, details {
+    text-align: center;
+}
+
+h3 {
+    color: var(--green);
+    font-size: var(--subheadingSize);
 }
 
 a {
@@ -74,4 +94,64 @@ main {
 embed {
     display: flex;
     align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--formMaxWidth);
+    margin: auto;
+}
+
+form:has(legend) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 var(--padding);
+}
+
+label, input, select, textarea {
+    margin: var(--margin);
+}
+
+label[data-required="true"]::after {
+    content: " *";
+    color: red;
+}
+input:user-invalid, textarea:user-invalid {
+    background-color: darkred;
+}
+
+
+p, ul, li, button, footer, figcaption, textarea, input[type="text"], input[type="email"] {
+    color: var(--purple);
+}
+
+summary, legend, label, select, button, input[type="submit"], output {
+    color: var(--blue);
+}
+
+textarea {
+    background-color: var(--backgroundColor);
+}
+
+@keyframes flash {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: red; }
+}
+
+.flash-error {
+    animation: flash 1s linear 2;
+}
+
+.clear-error {
+    background-color: transparent;
+}
+
+#errorMsg {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }

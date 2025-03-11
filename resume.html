@@ -29,5 +29,27 @@
             </noscript>
             <embed src="assets/resume.pdf" title="Resume PDF" width="40%" height="1000px"></iframe>
         </main>
+        <h3>Contact Me!</h3>
+        <form action="https://httpbin.org/post" method="post" id="contactForm">
+            <input type="hidden" id="possible_bot" name="possible_bot" value="true">
+            <br>
+            <label for="name" data-required="true">Name</label>
+            <br>
+            <input type="text" id="name" name="name" required maxlength="50">
+            <br>
+            <label for="email" data-required="true" maxlength="50">Email</label>
+            <br>
+            <input type="email" id="email" name="email" required maxlength="50">
+            <br>
+            <label for="comment" data-required="true" maxlength="50">Comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" required maxlength="500"></textarea> 
+            <br>
+
+            <input type="submit" id="submit" value="Submit">
+            <button type="reset">Clear</button>
+            <output id="errorMsg">Errors: None</output>
+            <output id="infoMsg">Info: None</output>
+        </form>
     </body>
 </html> 
