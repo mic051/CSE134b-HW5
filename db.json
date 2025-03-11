@@ -1,18 +1,20 @@
 {
-    "cards": {
-        "title": "2 Topcon Positioning Systems Internships",
-        "image": "assets/topcon.jpg",
-        "alt": "Topcon Positioning Systems Logo",
-        "desc": "Done 2 internships. One to develop firmware testing libraries and programs for device setup for manufacturing. Worked with third party vendors to design accessible programs. The second one was to automate an internal task, saving hundreds of hours a year",
-        "link": "https://www.topconpositioning.com/",
-        "linkText": "Topcon"
-    },
-    {
-        "title": "Huffman Coder and Decoder",
-        "image": "assets/huffman.jpg",
-        "alt": "Huffman Tree",
-        "desc": "Wrote a command line program for CSE101 that performs Huffman coding and decoding on files. The program reads a text file, creates a huffman tree, and returns an encoded output that contains the tree within it. The file can then be decoded with the tree in the output.",
-        "link": "https://en.wikipedia.org/wiki/Huffman_coding",
-        "linkText": "Huffman Coding (Wikipedia)"
+    "cards": [
+        {
+            "title": "2 Topcon Positioning Systems Internships",
+            "image": "assets/topcon.jpg",
+            "alt": "Topcon Positioning Systems Logo",
+            "desc": "Done 2 internships. One to develop firmware testing libraries and programs for device setup for manufacturing. Worked with third party vendors to design accessible programs. The second one was to automate an internal task, saving hundreds of hours a year",
+            "link": "https://www.topconpositioning.com/",
+            "linkText": "Topcon"
+        },
+        {
+            "title": "Huffman Coder and Decoder",
+            "image": "assets/huffman.jpg",
+            "alt": "Huffman Tree",
+            "desc": "Wrote a command line program for CSE101 that performs Huffman coding and decoding on files. The program reads a text file, creates a huffman tree, and returns an encoded output that contains the tree within it. The file can then be decoded with the tree in the output.",
+            "link": "https://en.wikipedia.org/wiki/Huffman_coding",
+            "linkText": "Huffman Coding (Wikipedia)"
         }
-  }
+    ]
+}
