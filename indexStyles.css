@@ -18,6 +18,10 @@
     --padding: 1.5em;
     --formMaxWidth: 60%;
     --projectCardBorder: 5px;
+    --gap: 15px;
+    --margin: 10px;
+    --cardHeight: 750px;
+    --cardMaxWidth: 400px;
 }
 
 [data-theme="light"] {
@@ -93,10 +97,6 @@ a, a:visited {
     box-sizing: border-box;
 }
 
-a:hover {
-    text-shadow: 0 0 10px color-mix(in srgb, var(--orange) 80%, var(--white) 20%);
-}
-
 aside {
     display: flex; 
     justify-content: center;
@@ -104,7 +104,7 @@ aside {
 }
 
 label, input, select, textarea {
-    margin: 10px;
+    margin: var(--margin);
 }
 form:has(legend) {
     display: flex;
@@ -125,7 +125,7 @@ form:has(legend) {
     aside img, aside source {
         width: 100%; 
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: var(--margin);
     }
 
     label, input, select, textarea {
@@ -252,8 +252,9 @@ aside {
 }
 
 label, input, select, textarea {
-    margin: 10px;
+    margin: var(--margin);
 }
+
 form:has(legend) {
     display: flex;
     justify-content: center;
@@ -273,7 +274,7 @@ form:has(legend) {
     aside img, aside source {
         width: 100%; 
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: var(--margin);
     }
 
     label, input, select, textarea {
@@ -343,7 +344,7 @@ input:user-invalid, textarea:user-invalid {
 footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: var(--gap);
 }
 
 * {
@@ -384,18 +385,17 @@ cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: var(--gap);
 }
 
 .projectCard {
     display: flex;
     flex-direction: column;
     border: var(--projectCardBorder) var(--yellow) solid;
-    margin: auto;
     text-align: center;
-    height: 750px;
-    max-width: 400px;
-    margin-bottom: 20px;
+    height: var(--cardHeight);
+    max-width: var(--cardMaxWidth);
+    margin-bottom: var(--margin);
 }
 
 .projectCard * {
@@ -405,6 +405,6 @@ cards {
 loadButtons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: var(--gap);
 }
 
