@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     localLoadBtn.addEventListener("click", () => {
-        console.log('local load');
         const cards = document.querySelector('cards');
         const data = JSON.parse(localStorage.getItem('card-data'));
 
@@ -181,5 +180,41 @@ document.addEventListener('DOMContentLoaded', () => {
             projectCard.setAttribute('linkText', card.linkText);
             cards.appendChild(projectCard);
         });
+    });
+
+    remoteLoadBtn.addEventListener("click", async () => {
+        const cards = document.querySelector('cards');
+        const urls = [
+            'https://jsonbin.io/quick-store/67cefa108960c979a56eff17',
+            'https://jsonbin.io/quick-store/67cefa698960c979a56eff42'
+        ];
+
+        cards.innerHTML = '';
+
+        try {
+            for (const url of urls) {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch from ${url}`);
+                }
+
+                const card = await response.json();
+                console.log(card);
+
+                const projectCard = document.createElement('project-card');
+                projectCard.setAttribute('title', card.title);
+                projectCard.setAttribute('image', card.image);
+                projectCard.setAttribute('alt', card.alt);
+                projectCard.setAttribute('desc', card.desc);
+                projectCard.setAttribute('link', card.link);
+                projectCard.setAttribute('linkText', card.linkText);
+                cards.appendChild(projectCard);
+            }
+        }
+
+        catch (err) {
+            console.error(`Error loading remote data with error: ${err}`);
+            return;
+        }
     });
 });
