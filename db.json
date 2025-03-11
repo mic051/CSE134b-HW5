@@ -8,13 +8,11 @@
         "linkText": "Topcon"
     },
     {
-        {
-            "title": "Huffman Coder and Decoder",
-            "image": "assets/huffman.jpg",
-            "alt": "Huffman Tree",
-            "desc": "Wrote a command line program for CSE101 that performs Huffman coding and decoding on files. The program reads a text file, creates a huffman tree, and returns an encoded output that contains the tree within it. The file can then be decoded with the tree in the output.",
-            "link": "https://en.wikipedia.org/wiki/Huffman_coding",
-            "linkText": "Huffman Coding (Wikipedia)"
-          }
-    }
+        "title": "Huffman Coder and Decoder",
+        "image": "assets/huffman.jpg",
+        "alt": "Huffman Tree",
+        "desc": "Wrote a command line program for CSE101 that performs Huffman coding and decoding on files. The program reads a text file, creates a huffman tree, and returns an encoded output that contains the tree within it. The file can then be decoded with the tree in the output.",
+        "link": "https://en.wikipedia.org/wiki/Huffman_coding",
+        "linkText": "Huffman Coding (Wikipedia)"
+        }
   }
